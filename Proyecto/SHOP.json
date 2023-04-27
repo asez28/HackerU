@@ -1,0 +1,59 @@
+[
+    {
+      "precio": 229,
+      "id": 1,
+      "title": "Call of duty Modern Warfare II",
+      "thumbnailUrl": "https://i.ibb.co/M6cw1FL/callofduty.jpg",
+      "video": "https://www.youtube.com/embed/ISc1orDBziY"
+      
+    },
+    {
+      "precio": 199,
+      "id": 2,
+      "title": "Fifa 23 (Standard Edition)",
+      "thumbnailUrl": "https://i.ibb.co/mGpdpRw/fifa.webp",
+      "video": "https://www.youtube.com/embed/atvZGVyqwq8"
+    },
+    {
+      "precio": 175,
+      "id": 3,
+      "title": "Forza Horizon 5 (Standard Edition)",
+      "thumbnailUrl": "https://i.ibb.co/LC7VbK9/forza.webp",
+      "video": "https://www.youtube.com/embed/FYH9n37B7Yw"
+    },
+    {
+      "precio": 159,
+      "id": 4,
+      "title": "NBA 2K23 (Standard Edition)",
+      "thumbnailUrl": "https://i.ibb.co/qj96q9c/nba.jpg",
+      "video": "https://www.youtube.com/embed/OzBLb4jW-UE"
+    },
+    {
+      "precio": 449,
+      "id": 5,
+      "title": "Street Fighter 6",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0526/0663/2093/products/EXON-StreetFighter6-UltimateEdition-PC-Cover_3e632046-a2fd-43cb-abc2-754a5058b3f5_large.jpg?v=1679681723",
+      "video": "https://www.youtube.com/embed/NuJjsHTWb2M"
+    },
+    {
+      "precio": 229,
+      "id": 6,
+      "title": "Hogwarts Legacy",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0526/0663/2093/products/EXON-HogwartsLegacy-StandardEdition-PC-Coverrrrrr_1024x1024.jpg?v=1672141225",
+      "video": "https://www.youtube.com/embed/1O6Qstncpnc"
+    },
+    {
+      "precio": 89,
+      "id": 7,
+      "title": "Minecraft",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0526/0663/2093/products/minecraft-java-edition-exon-1_0e02a3dc-6bef-4c54-bdec-9d475851a8ee_1024x1024.jpg?v=1666127289",
+      "video": "https://www.youtube.com/embed/MmB9b5njVbA"
+    },
+    {
+        "precio": 249,
+        "id": 8,
+        "title": "Dead Island 2",
+        "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0526/0663/2093/products/EXON-DeadIsland2-StandardEdition-PC-Cover_360x.jpg?v=1672491379",
+        "video": "https://www.youtube.com/embed/abYGYJZBmmY"
+      }
+  ]

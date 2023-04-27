@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="./pngegg.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop 🎮</title>
+    <link href="./CSS/shop.css" rel="stylesheet">
+</head>
+<body>
+ <a href="#" class="scroll top">↑</a>   
+ <a href="#finish" class="scroll bottom">↓</a> 
+<nav>
+    <div id="navbar">
+        <img width="80" src="./pngegg.png">
+        <h1>Game Zone 🎮</h1>
+        <div id="navbar-right">
+          <a href="./index.html">Home</a>
+          <a class="active" href="./Shop.html">Shopping cart</a>
+          <a href="./Sent.html">Sent me</a>
+          <a href="./Gallery.html">Gallery</a>
+          <a href="./AboutUS.html">About US</a>
+        </div>
+      </div>
+ </nav> 
+<div class="container" style="margin-top: 6rem;">
+    <div class="row" id="items">
+    </div>
+</div>
+<section class="container mt-3">
+    <ul class="list-group"  id="carrito">
+      
+    </ul>
+</section>
+
+<section id="section2" class="container mt-3">
+ 
+</section>
+
+<template id="templateCard">
+    <div class="col-12 mb-3 col-md-6 p-2">
+        <div class="card align-items-center" style="background-color: rgba(0, 0, 0, 0); backdrop-filter: blur(5px);">
+            <h5 class="title">Titulo</h5>
+            <img alt="" class="card-img-top" style="width: 200px; border-radius: 15px;">
+            <p class="price">precio</p>
+            <iframe  src="https://www.youtube.com/embed/ISc1orDBziY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button class="button-85 col-3 btn btn-dark mt-2 mb-2">Add to the Cart</button>
+        </div>
+    </div>
+</template>
+
+<template id="templateCarrito">
+    <li class="list-group-item  rounded-25 d-flex justify-content-between align-items-center" style="background-color: rgb(47, 47, 47);">
+      <img width="80" class="imagen">
+      <span class="lead text-white" style="font-size: 40px; font-family: 'Exo', sans-serif;">A list item</span>   
+      <!-- <span class="lead text-white" style="font-size: 40px; font-family: 'Exo', sans-serif;">A console Select</span> -->
+      <span class="text-center text-white" style="font-size: 60px;">🛒 14</span>
+     </li>
+     <li class="list-group-item d-flex justify-content-between align-items-center text-white" style="background-color: rgba(0, 0, 0, 0.744); backdrop-filter: blur(5px);">
+      <div>
+       <p class="lead mb-0">Total: ₪<span style="font-size: 30px; color: #00ff00; font-family: 'Nova Square', cursive;">300</span></p>
+      </div>
+      <div>
+         <button class="btn btn-sm btn-outline-primary">+</button>
+         <button class="btn btn-sm btn-outline-danger">-</button>
+      </div>
+    </li>
+</template>
+  
+  <template id="templateFooter">
+    <div class="card text-white" style="background-color: rgba(0, 0, 0, 0.744); backdrop-filter: blur(5px);">
+      <div class="card-body d-flex justify-content-between align-items-center">
+        <p class="lead mb-0" style="font-size: 30px; font-family: 'Nova Square', cursive;">Total ₪<span >1500</span></p>
+        <p class="lead mb-0" style="font-size: 30px; font-family: 'Nova Square', cursive;">items: <span class="nCant">1</span></p>
+        <a href="./Sent.html" class="btn btn-outline-success text-white">Continue 🏍️</a>
+        <button class="clean btn btn-outline-warning">Clean</button>
+      </div>
+    </div>
+  </template>
+  
+ <br>
+ <div class="footer container">
+    <div class="letter">
+        <h1>Contact Us</h1>
+        <li>📱 Call us to the phone +972586926381</li>
+        <li>🗺️Address: Shprintzak 35 B, Quiryat Motzkin</li>
+        <li>Take me with Waze <a
+                href="https://ul.waze.com/ul?place=ChIJP0-wyx23HRUR16BtJTOcsBA&ll=32.83648640%2C35.08034330&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"><img
+                    src="./Gallery/waze.png" style="width: 30px;"></a></li>
+        <li>📧Email: GameZone936@gmail.com</li>
+    </div>
+    <div class="letter2 row">
+        <h2>About Us</h2>
+        <strong style="font-family: Arial, Helvetica, sans-serif;">We are a game store for consoles, we can distribute to all part of Israel at better prices. You can find the best games of the year and the best we send them home!
+            <a href="./AboutUS.html" class="btnFooter btn btn-outline-info btn-sm">Read More</a>    
+        </strong>
+<div class="col-4 d-flex">
+    <div class="box8">
+        <a href="https://www.facebook.com/"><img src="./Gallery/facebook-app-symbol.png"></a>
+    </div>
+    <div class="box8">
+        <a href="https://www.instagram.com/"><img
+                src="./Gallery/instagram.png" alt=""></a>
+    </div>
+    <div class="box8">
+        <a href="https://www.twitter.com/"><img src="./Gallery/twitter.png" alt=""></a>
+    </div>
+</div>
+</div>
+<div class="img22 d-flex">
+    <img src="./pngegg.png" alt="">
+</div>
+</div>
+<div id="finish"></div>
+<script src="./JS/shop.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

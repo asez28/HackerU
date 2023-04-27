@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="./pngegg.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style2.css">
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <nav class="navbars">
+        <div class="logi">
+          <img width="80" src="./pngegg.png">
+           <a href="./index.html" class="logo">Game Zone 🎮</a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./Shop.html">Shopping cart</a></li>
+                <li><a href="./Sent.html">Sent me</a></li>
+                <li><a href="./Gallery.html">Gallery</a></li>
+                <li><a href="./AboutUS.html">About us</a></li>
+            </ul>
+        </div>
+        <img src="./icons8-menu-48.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+</div>
+    <!-- <header></header> -->
+    <div class="container"> 
+    <div class="row text-center">  
+        <div class="card col-4 mt-5 text-white" style="background-color: rgba(0, 132, 248, 0.171); backdrop-filter: blur(5px);">
+            <img src="./most-popular-video-games-of-2022-1642612227.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shopping Cart 🛒</h5>
+              <p class="card-text">You can enter and choose from the variety of games that we offer in our store, for Xbox, Playstation or PC. You can find from the last Fifa to the last Call of duty. The Best: AT GREAT PRICES! </p>
+              <button class='glowing-btn'><a class="text-white" href="./Shop.html"><span class='glowing-txt'>E<span class='faulty-letter'>NT</span>ER!</span></a></button>
+        </div>   
+    </div>
+    <div class="video col-lg-5 p-5">
+    <h4>BEST GAMES OF 2023</h4>
+    <video
+    id="my-video"
+    class="video-js vjs-theme-sea"
+    controls
+    preload="auto"
+    width="450"
+    height="264"
+    poster="https://www.gameinformer.com/sites/default/files/styles/full/public/2022/05/16/4038a2d2/videogamereleases2023.jpg"
+    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/xej0Uzz0140"}] }'
+  >
+    
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+</div>
+<div class=" col-2 mt-2">
+    <h4 class="text-warning bg-dark">TOP SALES</h4>
+    <img class="picture p-1" src="./callofduty.jpg" style="width: 70px;">
+    <img class="picture p-1" src="./fifa.jpg" style="width: 70px;">
+    <img class="picture p-1" src="./forza.jpg" style="width: 70px;">
+    <img class="picture p-1" src="./nba.jpg" style="width: 70px;">
+    <br>
+    <a href="./Gallery.html" class="glowing-btn btn text-white" style="backdrop-filter: blur(7px);">SEE MORE</a>
+</div>
+    </div>
+    </div>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-links")
+         
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <script src="./JS/Youtube.min.js"></script>
+</body>
+</html>

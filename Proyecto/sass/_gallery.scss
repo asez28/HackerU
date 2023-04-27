@@ -1,0 +1,112 @@
+$colorOne: white;
+$colorTwo: rgba(0,0,0,0.8);
+$colorTree: #d6d6d6;
+$colorFour: rgba(0, 0, 0, 0.497);
+
+@mixin arrows {
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    width: auto;
+    margin-top: -22px;
+    color:  $colorOne;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#arrow-prev{
+    @include arrows;
+    left: 15px;
+    border-radius: 0 3px 3px 0;
+}
+
+#arrow-next{
+    @include arrows;
+    right: -40px;
+    border-radius: 3px 0 0 3px;
+}
+
+.center_y{
+    position: relative;
+    top:10%;
+    transform: translateX(-50%);
+}
+
+.center_x{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider-container{
+    width: 800px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.slide{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.slider-arrow{
+    color: $colorOne;
+    font-size: 50px;
+    position: absolute;
+}
+
+#arrow-prev:hover, #arrow-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: $colorOne;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    background-color: $colorFour;
+  }
+
+  #dots-wrapper{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .dot-nav{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 0 8px;
+    border: 2px solid $colorTree;
+  }
+
+  .dot-nav:hover{
+    background-color: $colorTree;
+}
+
+.active-dot{
+    background-color: $colorTree;
+}
+
+.fade1{
+    animation: fade;
+    animation-duration: .5s;
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}

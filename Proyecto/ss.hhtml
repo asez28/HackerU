@@ -1,0 +1,80 @@
+   <div class="container my-5 ">
+    <h1>Ordering and delivery details</h1>
+
+    <div class="alert alert-danger my-2 d-none" role="alert">
+      Todos los campos son obligatorios
+  </div>
+    <form id="formulario">
+          
+
+          </div>
+          <div class="col-md-4 mb-3 p-2">
+            <label>Last name</label>
+            <input type="text" class="form-control" placeholder="Last name" name="lastName" required>
+          </div>
+          <div class="col-md-2 mb-3 p-2">
+            <label>📱 Phone Number</label>
+            <input type="number" class="form-control" placeholder="📱Phone Number" name="number" required>
+          </div>
+          <div class="col-md-2 mb-3 p-2">
+           <select class="form-select mb-2" name="opcion">
+            <option value="Estudiante">User</option>
+            <option value="Estudiante">Guest</option> 
+           </select>
+          </div>
+        </div>
+      
+          <div class="col-md-4 mb-3 p-2">
+            <label>Address</label>
+            <input type="text" class="form-control" placeholder="🗺️Address" name="address" required>
+          </div>
+          <div class="col-md-3 mb-3 p-2">
+            <label for="validationDefault04">City</label>
+            <input type="text" class="form-control" placeholder="City" name="city" required>
+          </div>
+          <div class="col-md-3 mb-3 p-2">
+            <label>Country</label>
+            <input type="text" class="form-control" placeholder="Country" name="country" required>
+          </div>
+        </div>
+        <button class="btn btn-primary p-2 mb-3" type="submit">Submit form</button>
+      </form>
+
+      <section class="row mt-3">
+        <div class="col-5" id="cardsEstudiantes">
+        
+        </div>
+         <div class="col-5" id="cardsProfesores">
+            
+         </div>
+      </section>
+   </div>
+
+   <template id="templateEstudiante">
+    <article class="card mb-2 text-white" style="background-color: #0000008e; backdrop-filter: blur(5px);">
+        <div class="card-body">     
+         <h5 class="p-2">  
+             <span class="text-primary">Nombre</span>
+             <span class="badge bg-success">approved</span>
+         </h5>
+         <h6 class="text-primary">🗺️Address</h6>
+         <p class="lead">📱Phone Number</p>
+         <p class="lead">User</p>
+         <button class="btn btn-success col-3">approved</button>
+         <button class="btn btn-danger col-3">Cancel</button>
+          </div>
+     </article>
+   </template>
+   
+   <template id="templateProfesor">
+    <article class="card mb-2 text-white" style="background-color: #a7090975; backdrop-filter: blur(5px);">
+        <div class="card-body">
+            <h5>Nombre
+            <span class="badge bg-success">approved</span>
+            </h5>
+            <h6>Guest</h6>
+            <p class="lead">📱Phone Number</p>
+            <p class="lead">🗺️Address</p>
+        </div>
+    </article>
+   </template>

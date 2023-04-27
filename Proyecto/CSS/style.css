@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+
+}
+
+body {
+    background-image: url(./625497.jpg);
+    background-size: 150%;
+    font-family: 'Poppins';
+}
+
+/* header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./625497.jpg);
+    background-size: cover;
+} */
+
+.navbars {
+    /* position: absolute; */
+    padding: 50px;
+    display: flex;
+    justify-content:  space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbars a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.navbars a:hover {
+    color: rgb(255, 0, 191);
+}
+
+.navbars .logo{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+
+.navbars .nav-links {
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+.navbars .nav-links ul{
+    display: flex;
+}
+
+.navbars .nav-links ul li{
+    margin: 0 25px;
+}
+
+.navbars .nav-links ul li.active a{
+    color: rgb(74, 171, 255);
+    font-weight: 600;
+}
+
+.navbars .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 35px; 
+    right: 50px;
+    width: 35px;
+}
+
+.mobile-menu {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .navbars {
+        padding: 0;
+    }
+
+    .navbars .logo{
+        /* position: absolute; */
+        top: 40px;
+        left: 10px;
+    }
+
+    .navbars .menu-hamburger{
+        display: block;
+        z-index: 3;
+    }
+      .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+      }
+
+      .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+     .nav-links ul  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .navbars .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+};
+
